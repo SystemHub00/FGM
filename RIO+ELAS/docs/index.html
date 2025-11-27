@@ -96,62 +96,41 @@
     </style>
 </head>
 <body>
-        <div class="container">
-                <img src="https://i.postimg.cc/8kwjd1CN/logo-rio-elas.png" alt="Rio +Elas" class="logo">
-                <div class="container">
-                                <img src="https://i.postimg.cc/8kwjd1CN/logo-rio-elas.png" alt="Rio +Elas" class="logo">
-                                <h1>Ficha de Inscrição</h1>
-                                <p>Participe do Projeto Rio +Elas e transforme sua vida através da beleza!</p>
-                                <form>
-                                                <label for="nome">Nome completo</label>
-                                                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
 
-                                                <label for="email">E-mail</label>
-                                                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+    <div class="container">
+        <img src="https://i.postimg.cc/8kwjd1CN/logo-rio-elas.png" alt="Rio +Elas" class="logo">
+        <h1>Ficha de Inscrição</h1>
+        <p>Participe do Projeto Rio +Elas e transforme sua vida através da beleza!</p>
+        <form>
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
 
-                                                <label for="telefone">Telefone</label>
-                                                <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
 
-                                                <label for="curso">Curso de interesse</label>
-                                                <select id="curso" name="curso" required>
-                                                                <option value="">Selecione</option>
-                                                                <option value="extensao-cilios">Extensão de Cílios</option>
-                                                                <option value="designer-sobrancelhas">Designer de Sobrancelhas</option>
-                                                                <option value="trancista">Trancista</option>
-                                                </select>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
 
-                                                <label for="idade">Idade</label>
-                                                <input type="number" id="idade" name="idade" min="16" required placeholder="Digite sua idade">
+            <label for="curso">Curso de interesse</label>
+            <select id="curso" name="curso" required>
+                <option value="">Selecione</option>
+                <option value="extensao-cilios">Extensão de Cílios</option>
+                <option value="designer-sobrancelhas">Designer de Sobrancelhas</option>
+                <option value="trancista">Trancista</option>
+            </select>
 
-                                                <label for="bairro">Bairro</label>
-                                                <input type="text" id="bairro" name="bairro" required placeholder="Digite seu bairro">
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" min="16" required placeholder="Digite sua idade">
 
-                                                <button type="submit">Enviar inscrição</button>
-                                </form>
-                                <div class="logos-extra">
-                                                <img src="https://investidordesucesso.fgmcursos.com.br/assets/logo-rj-C4on5mTt.png" alt="Prefeitura do Rio de Janeiro - SMTE">
-                                </div>
-                </div>
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" name="bairro" required placeholder="Digite seu bairro">
 
-                <!-- INSTRUÇÕES PARA USAR O BACKEND EM PYTHON (FLASK) -->
-                <div style="max-width:600px;margin:40px auto 0 auto;padding:24px;background:#f9f9f9;border-radius:8px;font-size:1rem;color:#222">
-                                <h2 style="color:#1e3a5c">Como fazer o formulário funcionar com Python</h2>
-                                <ol>
-                                                <li>Abra o terminal na pasta <b>RIO+ELAS/backend-python</b>.</li>
-                                                <li>Instale as dependências:<br>
-                                                                <code>pip install -r requirements.txt</code>
-                                                </li>
-                                                <li>Certifique-se de que o arquivo <b>plated-field-474017-b8-e00d977b2612.json</b> está na pasta <b>RIO+ELAS</b> (um nível acima do backend-python).</li>
-                                                <li>Inicie o servidor:<br>
-                                                                <code>python app.py</code>
-                                                </li>
-                                                <li>O backend ficará disponível em <b>http://localhost:3001</b>.</li>
-                                                <li>O formulário deste site já está configurado para enviar para esse backend.</li>
-                                                <li>Ao acessar este arquivo <b>nesta máquina</b> e enviar o formulário, os dados irão para a planilha Google Sheets.</li>
-                                </ol>
-                                <b>Observação:</b> O backend só funcionará localmente, ou seja, apenas nesta máquina.<br>
-                                <b>Se quiser publicar o site, use o arquivo <code>docs/index.html</code> para o GitHub Pages.</b>
-                </div>
+            <button type="submit">Enviar inscrição</button>
+        </form>
+        <div class="logos-extra">
+            <img src="https://investidordesucesso.fgmcursos.com.br/assets/logo-rj-C4on5mTt.png" alt="Prefeitura do Rio de Janeiro - SMTE">
+        </div>
+    </div>
 
                 <script>
                 document.querySelector('form').addEventListener('submit', async function(e) {
